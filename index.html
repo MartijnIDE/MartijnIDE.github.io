@@ -1,23 +1,20 @@
----
-layout: default
----
+<!doctype html>
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+ </head>
 
-<div class="home">
+<body>
 
-  <h1 class="page-heading">Posts</h1>
+<section class="jumbotron">
+  <div class="container">
+    <div class="row text-center">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <a class="btn btn-primary" href="/page1.html" role="button">Klik hier</a>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    </div>
+  </div>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</body>
+</html>
